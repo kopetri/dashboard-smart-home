@@ -13,6 +13,7 @@
   export let cardTitle = "";
   export let cardColor;
   export let cardFooterText = "View Details";
+  export let href;
 </script>
 
 <Card inverse color={cardColor} class="mb-4">
@@ -20,7 +21,7 @@
     <CardText>{cardTitle}</CardText>
   </CardBody>
   <CardFooter class="d-flex align-items-center justify-content-between">
-    <a class="small text-white stretched-link" href="charts">
+    <a class="small text-white stretched-link" href={href}>
       {cardFooterText}
     </a>
     <div class="small text-white">

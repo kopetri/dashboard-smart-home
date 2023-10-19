@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import Chart from "chart.js";
 
-  const chartData = {
+  export let chartData = {
     labels: [
       "January",
       "February",
